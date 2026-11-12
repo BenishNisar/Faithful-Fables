@@ -2,144 +2,50 @@
 
 /* Locally hosted editorial font pairing and cinematic interlude. */
 h1,h2{letter-spacing:-.045em}h1{font-size:clamp(70px,8vw,112px);line-height:.96}h2{font-size:clamp(44px,4.7vw,64px);line-height:1.02}.brand>span{font-weight:600;font-size:25px}.intro{line-height:1.95}nav{font-size:11px}.video-card h3{font-size:27px}.story-banner{position:relative;min-height:480px;display:flex;align-items:center;overflow:hidden;background:#19180f;border-block:1px solid #d1ad7333;isolation:isolate}.story-banner>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-3}.banner-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,#080b08b8 0%,#080b0860 34%,transparent 70%),linear-gradient(0deg,#080b0840,transparent 35%)}.banner-content{padding-block:70px}.banner-content .eyebrow{color:#e7c995;font-size:9px}.banner-content h2{font-size:clamp(50px,5.5vw,76px);color:#fbf6e9}.banner-content h2 em{color:#e6c58b}.banner-content>p:not(.eyebrow){font-size:12px;line-height:1.9;color:#dedaca;margin:20px 0 25px}.banner-link{display:inline-flex;align-items:center;gap:35px;padding-bottom:9px;border-bottom:1px solid #e6c58b88;font-size:11px;color:#edcfa0}.banner-link:hover{color:white}.banner-caption{position:absolute;bottom:24px;right:5.5%;font-size:7px;letter-spacing:2px;color:#e5d5b6b0}@media(max-width:700px){h1{font-size:82px}h2{font-size:46px}.brand>span{font-size:23px}.story-banner{min-height:460px}.story-banner>img{object-position:62% center}.banner-shade{background:linear-gradient(90deg,#080b08e0,#080b0899 52%,#080b0820)}.banner-content{padding-block:60px}.banner-content h2{font-size:57px}.banner-content .eyebrow{font-size:8px;letter-spacing:1.7px}.banner-caption{font-size:6px;right:auto;left:5.5%}.contact h2{font-size:55px}.video-card h3{font-size:24px}}
-/* Elegant portfolio typography */
-:root {
-  --font-heading: "Cormorant Garamond", Georgia, serif;
-  --font-body: "Manrope", Arial, sans-serif;
-}
-
-body {
-  font-family: var(--font-body);
-  font-size: 15px;
-  line-height: 1.8;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+/* Body, navigation and buttons */
+body,
 button,
 input,
 textarea,
-select {
-  font-family: var(--font-body);
+select,
+nav,
+.button,
+.brand small,
+.floating-film small,
+.eyebrow {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
 }
 
+/* Headings, brand name and numbers */
 h1,
 h2,
-h3 {
-  font-family: var(--font-heading);
-  font-weight: 400;
-  text-wrap: balance;
+h3,
+h1 em,
+h2 em,
+.brand > span,
+.stat strong,
+.floating-film,
+.hero-note span:last-child {
+  font-family: "Playfair Display", Georgia, serif !important;
 }
 
 h1 {
-  font-size: clamp(64px, 8vw, 112px);
-  line-height: 0.98;
-  letter-spacing: -0.045em;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
 }
 
 h2 {
-  font-size: clamp(42px, 4.7vw, 64px);
-  line-height: 1.08;
-  letter-spacing: -0.035em;
-}
-
-h3,
-.video-card h3 {
-  font-size: 28px;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-}
-
-h1 em,
-h2 em {
-  font-family: var(--font-heading);
   font-weight: 400;
-  font-style: italic;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
 }
 
-.brand > span {
-  font-family: var(--font-heading);
-  font-size: 27px;
+h3 {
   font-weight: 600;
-  letter-spacing: -0.02em;
+  line-height: 1.3;
 }
 
-.brand small {
-  font-family: var(--font-body);
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-}
-
-.intro {
-  font-size: 15px;
-  line-height: 1.9;
-}
-
-nav,
-.button,
-.text-link {
-  font-family: var(--font-body);
-  font-size: 12px;
-}
-
-nav,
-.button {
-  font-weight: 600;
-}
-
-.eyebrow {
-  font-family: var(--font-body);
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  line-height: 1.6;
-}
-
-.stat strong {
-  font-family: var(--font-heading);
-  font-size: 60px;
-  font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.035em;
-}
-
-.banner-content h2,
-.contact h2 {
-  font-size: clamp(48px, 5.5vw, 76px);
-  line-height: 1.05;
-  letter-spacing: -0.035em;
-}
-
-@media (max-width: 700px) {
-  h1 {
-    font-size: clamp(58px, 12vw, 82px);
-    letter-spacing: -0.04em;
-  }
-
-  h2 {
-    font-size: clamp(38px, 9vw, 48px);
-  }
-
-  .banner-content h2,
-  .contact h2 {
-    font-size: clamp(42px, 10vw, 57px);
-  }
-
-  .video-card h3 {
-    font-size: 24px;
-  }
-
-  .brand > span {
-    font-size: 23px;
-  }
-
-  .intro {
-    font-size: 14px;
-    line-height: 1.85;
-  }
-
-  .stat strong {
-    font-size: 52px;
-  }
+body {
+  line-height: 1.8;
 }
